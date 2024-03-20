@@ -1,0 +1,266 @@
+Make presentation about mu internship base on Given details
+
+I work  in Amak solution limited company in Web development
+
+I work majorly in 2 thing 
+First Work
+1. Web development
+i create a new website of company in wix , 
+1st step i Analise hole website, what is issue in web site, what they need, what functionality they needed. 
+then i research base on there requirement and the i create a design of web page what is most reliable for them base on there requirement and performance related.
+then i make a serval different different page on base on there section and products.
+
+also update a content of website base on SEO and more related to information.
+
+also, change images of website
+
+Once a design file then i work in user better experience, for that i created more user friendly UI and UX and then add Animation , 
+also for the marketing and reach from the client care or add SEO related functionality.
+also a create 404 error page for client good relation and good experience with website    
+
+Once all done then i create new a Website.
+
+then i make responsive for the all mobile, tab, laptop, all type of Screen.
+
+and then i re- analyze hole website , How to optimize website performance, So then get less time to load and User get Good Experience about a Website Use. 
+
+also make new blogs and blog page and understand Wix CMS (Content management System  ) and how to improve SEO of website
+
+also, analyses google tag manager and   what is important of that and how to integrate in Website.
+ 
+
+also, SEE Ecomarece section of wix or Website how to add product , Customer Category 
+
+also add a wix pre build chat bot in website for more and better customer interaction for .
+
+
+
+Second Work
+2. 
+i work in Development 
+
+there i work  in software bug finding , solving, resolve a problem and adding a new Functionality about a software.
+
+Product name is HRMGO which is Human Resource Management System.
+
+HrmGo is base on PHP language and Framework is : Laravel
+
+ HRMGO is a softwate which use in company to manage a there Employees 
+
+about HRM Sustem :
+
+
+What Services Does Human Resource Management Offer?
+
+A wide range of services fall under the general heading of human resource management, including payroll, hiring, maintaining employees, company policies, training, and much more.
+
+Implement Human Resources Management to accomplish your goals.
+Our team of experts can provide appropriate solutions for any issue pertaining to Human Resource Management. These are some of the services that we can offer you.
+
+
+Attendance Management
+
+Tracks employee attendance automatically. Clocking in and out digitally. Simplifies the management of the workforce.
+
+Staff Management
+
+Arranges shifts and oversees documentation. Creates reports and keeps track of performance. Boosts team morale and maximizes output.
+
+Training Segment
+
+Control the training's schedule, list, type, and other specifics. Data and lists of trainers are also kept on file.
+
+Report
+
+One crucial factor in determining the success of your business endeavour is the responsiveness of your website.
+
+Utilize the human resource management solution from Amak Solution to manage customers and data collaboratively.
+Amak Solution provides all of the Human Resource management services required to create a complete online product, including:
+
+​
+
+Attendance and Timesheet management
+
+Payroll Management
+
+Recruitment and training management
+
+Maintain staff
+
+Company Policies
+
+Disciplinary and complaints management
+
+File management
+
+HRM Reports
+
+Events and meetings management
+
+​
+
+For more efficient workforce management, select our HRM software. We enable your HR team to succeed by providing them with user-friendly tools, instantaneous insights, and unmatched support. Choose us for your HRM needs to experience efficiency, accuracy, and innovation.
+
+
+In HRMGO there is a lot of bug available
+and missing Functionality .
+
+I Solve that or add on a new Functionality on Software 
+
+In hrmGo Software What i Do , what i learn explain in above:
+
+1. firstly i analyses Code and application Structure 
+then i deployed  application on server,
+then i integrate with php version and give file permission and follow a step which is useful for the host application.
+
+in HRMGO software there is a mainly two portal 
+1. for Super admin
+2. for Company
+
+
+Super admin is make a plan add functionality 
+HRMGO Functionality : 
+and then publish plan in Website. and Company buy plan from the website also company do payment on Portal also,
+then company create a Employee , HR , Trainer a mange them.
+ track there Attendance, pay the employee, chat with employee, add compline, create tickets, do employee payment, give them warning, add events, add meeting schedule, make report, track company expense,  make to do list, or server Functionality, organize event, major announcement
+
+create a branches , Department, Section and make different category of field and manage them. 
+There is a serval different type of bugs or error available in Software which is resolve by me which about details mention below
+
+which is mention a below how to mention how to i resolve the bug and error :
+
+Task 1: Invalid Showing Employee ID from last login Section.
+Solution:
+1.	Navigate to app\Http\Controllers\EmployeeController.php
+2.	Make changes in Line no.464 and 465
+ 
+
+3.	Navigate to resources\views\employee\lastLogin.blade.php
+4.	Make changes in Line no. 34
+ 
+	
+Before:
+ 
+After:
+ 
+Task 2: In Section: Report -> MonthlyAttendance , DailyAttendance , TimeSheetsShowing Invalid Employee ID. 
+Solution:
+Step 1:
+1.	Navigate app\Http\Controllers\AttendanceEmployeeController.php
+2.	Add new Syntext in line no. 4
+SS:
+ 
+Step 2:
+1.	Navigate to app\Http\Controllers\AttendanceEmployeeController.php
+2.	Make changes in function store() on line no. 138 and 152
+ 
+Step 3:
+1.	Make changes in function update() on line no. 251 and 262
+ 
+Step 4: 
+1.	Make changes in function attendance() on line no. 311, 362, 346
+ 
+ 
+Step 5: Create a new column in Attendance_employee database.
+
+1.	Navigate to app\AttendanceEmployee.php
+2.	Add new variable in line no. 20
+ 
+3.	Navigate to: database\migrations\2020_01_27_052503_create_attendance_employees_table.php Make change in Line no.28 
+ 
+Step 6: Changes in Report Controller File
+1.	Navigate to app\Http\Controllers\ReportController.php
+2.	Make changes in Function monthlyAttendance () on Line no. 355 TO 364
+ 
+3.	Make changes in Line no. 382
+ 
+4.	Make change in Line No. 388
+ 
+Step 7: Make changes in View Pages.
+1.	Navigate to resources\views\report\monthlyAttendance.blade.php
+2.	Make changes in line no. 70
+ 
+3.	Make changes in Line no. 37
+ 
+
+
+Step 8: Make change in DailyAttendance Page
+1.	Navigate to resources\views\report\dailyAttendance.blade.php
+2.	Make changes in Line no. 65
+ 
+
+Task 3: In Section: Report -> MonthlyAttendance , DailyAttendance Not Showing all employee attendance details.
+Step 1:
+1.	Navigate to app\Http\Controllers\AttendanceEmployeeController.php
+2.	Make changes in function store() on line no. 139 and 151
+ 
+
+ 
+
+Step 2:
+1.	Make changes in function attendance() on line no. 312 and 325
+ 
+
+2.	Make changes in line no. 345
+ 
+
+
+
+Task 4: Not Showing Valid Employee ID in Section: Report -> Timesheet
+Solution:
+1.	Navigate to amak/public_html/amakservice.com/hrmgo/app/Http/Controllers/ReportController.php
+2.	Make changes in function timesheet() on line no. 403 and 405
+ 
+3.	Navigate to amak/public_html/amakservice.com/hrmgo/resources/views/report/timesheet.blade.php
+4.	Make changes in line no 67
+  
+
+
+1.	In Manage Daily Attendance
+
+ 
+2.	Manage Monthly Attendance
+
+ 
+3.	Report  TimeSheet
+
+Task 5: When User manually add Attendance, there is not required to add CheckOut Time.
+Solution:
+1.	Navigate to app\Http\Controllers\AttendanceEmployeeController.php
+2.	Make changes in 90
+ 
+
+
+Task 6: In Attendance section not Showing attendance details in proper sorting manner. 
+Solution:
+1.	Navigate to resources/views/attendance/index.blade.php
+2.	Make changes in line no. 31.
+ 
+3.	Make changes in line no. 96 to 98.
+ 
+
+ 
+
+Task 7: In Chat section, there is not showing proper uploaded profile picture.
+Solution:
+1.	Navigate to resources/views/chats/index.blade.php
+2.	Make changes in line no 122.
+ 
+
+ 
+Task 8: Not Showing Real Time Chat. Need to refresh the chat page everytime.
+Solution:
+1.	Go to https://dashboard.pusher.com/
+2.	Create new channel
+ 
+3.	Go to channel  App keys section  there get API configuration Key. -> Copied value and then,
+ 
+4.	Go to .env file and there paste the Api Configuration value in particular variable.
+Add manually,
+ 
+	OR, Section  System Setting  Go to Pusher setting and add details on there.
+ 
+ 
+
+    
+
